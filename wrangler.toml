@@ -1,0 +1,12 @@
+name = "decap-proxy"                   # o nome do seu Worker
+main = "src/index.ts"                  # aponta para o código TS do proxy
+compatibility_date = "2025-07-14"      # data de hoje
+compatibility_flags = ["nodejs_compat"]  # habilita APIs de Node
+
+# Se quiser usar o subdomínio padrão workers.dev, deixe só isso:
+workers_dev = true
+
+# Se você tiver um domínio próprio gerenciado no Cloudflare,
+# remova ou comente o workers_dev e use em vez disso:
+# workers_dev = false
+# route = { pattern = "decap.mydominio.com/*", zone_name = "meudominio.com", custom_domain = true }
